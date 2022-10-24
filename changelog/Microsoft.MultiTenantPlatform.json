@@ -661,6 +661,48 @@
       "CreatedDateTime": "2022-06-01T17:23:26.9225469Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "526face5-c221-4fb1-a2d4-8d848760c68f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplateCollectionTenantSummaries",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementTemplateCollectionTenantSummaries** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "526face5-c221-4fb1-a2d4-8d848760c68f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplateStepTenantSummaries",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementTemplateStepTenantSummaries** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "526face5-c221-4fb1-a2d4-8d848760c68f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplateCollectionTenantSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementTemplateCollectionTenantSummary](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplateCollectionTenantSummary?view=graph-rest-beta) resource",
+          "Target": "managementTemplateCollectionTenantSummary"
+        },
+        {
+          "Id": "526face5-c221-4fb1-a2d4-8d848760c68f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplateStepTenantSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementTemplateStepTenantSummary](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplateStepTenantSummary?view=graph-rest-beta) resource",
+          "Target": "managementTemplateStepTenantSummary"
+        }
+      ],
+      "Id": "526face5-c221-4fb1-a2d4-8d848760c68f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-24T17:10:53.1864453Z",
+      "WorkloadArea": "Microsoft.MultiTenantPlatform",
+      "SubArea": ""
     }
   ]
 }
