@@ -1,5 +1,5 @@
 ---
-title: "Get managementTemplatmanagementTemplateStepTenantSummaryeCollectionTenantSummary"
+title: "Get managementTemplateStepTenantSummary"
 description: "Read the properties and relationships of a managementTemplateStepTenantSummary object."
 author: "oliviamikola"
 ms.localizationpriority: medium
