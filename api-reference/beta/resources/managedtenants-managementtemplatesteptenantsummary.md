@@ -1,19 +1,19 @@
 ---
 title: "managementTemplateStepTenantSummary resource type"
-description: "A summary of a managementTemplateStep on a tenant."
+description: "Represents the summary of a managementTemplateStep on a tenant."
 author: "oliviamikola"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---
 
-# managedTenantAlert resource type
+# managementTemplateStepTenantSummary resource type
 
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary of a managementTemplateStep on a tenant.
+Represents the summary of a [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) on a tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -22,24 +22,24 @@ A summary of a managementTemplateStep on a tenant.
 |[Get managementTemplateStepTenantSummary](../api/managedtenants-managementtemplatesteptenantsummary-get.md)|[microsoft.graph.managedTenants.managementtemplatesteptenantsummary](../resources/managedtenants-managementtemplatesteptenantsummary.md)|Read the properties and relationships of a [microsoft.graph.managedTenants.managementTemplateStepTenantSummary](../resources/managedtenants-managementtemplatesteptenantsummary.md) object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-| `id`            | `Edm.String` | The unique identifier of entity. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `createdDateTime`                  | `Edm.DateTimeOffset`                                    | The date and time at which this entity was created. Required. Read-only.  | Yes  | Yes      | Yes      |
-| `createdByUserId`                  | `Edm.String`                                    | The Azure AD user id of the user who created this entity. Required. Read-only.  | Yes  | Yes      | Yes      |
-| `lastActionDateTime`                  | `Edm.DateTimeOffset`                                    | The date and time at which this entity was last modified. Normally caused by activities in the related ManagementTemplateCollections. Read-only.  | Yes  | No      | Yes      |
-| `lastActionByUserId`                  | `Edm.String`                                    | The Azure AD user id of the user who last modified this entity. Normally caused by activities in the related ManagementTemplateCollections. Read-only.  | Yes  | No      | Yes      |
-| `managementTemplateCollectionId`            | `Edm.String` | The managementTemplateCollectionId associated with this summary. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `managementTemplateCollectionDisplayName`            | `Edm.String` | The managementTemplateCollection display name associated with this summary. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `managementTemplateId`            | `Edm.String` | The managementTemplateId associated with this summary. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `managementTemplateDisplayName`            | `Edm.String` | The managementTemplate display name associated with this summary. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `managementTemplateStepId`            | `Edm.String` | The managementTemplateStepId associated with this summary. Required. Read-only.                                           | Yes | Yes      | Yes      |
-| `managementTemplateDisplayName`            | `Edm.String` | The managementTemplateStep display name associated with this summary.  Required. Read-only.                                          | Yes | Yes      | Yes      |
-| `assignedTenantsCount`   | `Edm.Int32` | The total number of tenants assigned to the managementTemplateStepId. Required. Read-only. | No | Yes      | Yes      |
-| `compliantTenantsCount`   | `Edm.Int32` | The number of compliant tenants assigned to the managementTemplateStepId. Required. Read-only.  | No | Yes      | Yes      |
-| `notCompliantTenantsCount`   | `Edm.Int32` | The total number of not-compliant tenants assigned to the managementTemplateStepId. Required. Read-only.  | No | Yes      | Yes      |
-| `dismissedTenantsCount`   | `Edm.Int32` | The number of dismissed tenants assigned to the managementTemplateStepId. Required. Read-only. | No | Yes      | Yes      |
-| `ineligibleTenantsCount`   | `Edm.Int32` | The number of ineligible tenants assigned to the managementTemplateStepId. Required. Read-only. | No | Yes      | Yes      |
+| Property                                | Type           | Description                                                                                                                                                                                                     |
+|:----------------------------------------|:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                                      | String         | The unique identifier for the entity. Required. Read-only.                                                                                                                                                      |
+| createdDateTime                         | DateTimeOffset | The date and time when this entity was created. Required. Read-only.                                                                                                                                            |
+| createdByUserId                         | String         | The unique identifier for the Azure Active Directory (Azure AD) user who created this entity. Required. Read-only.                                                                                              |
+| lastActionDateTime                      | DateTimeOffset | The date and time at which this entity was last modified. Normally caused by activities in the related [managementTemplateCollections](../resources/managedtenants-managementtemplatecollection.md). Read-only. |
+| lastActionByUserId                      | String         | The unique identifier for the Azure AD user who last modified this entity. Normally caused by activities in the related **managementTemplateCollections**. Read-only.                                           |
+| managementTemplateCollectionId          | String         | The unique identifier for the **managementTemplateCollection** associated with this summary. Required. Read-only.                                                                                               |
+| managementTemplateCollectionDisplayName | String         | The **managementTemplateCollection** display name associated with this summary. Required. Read-only.                                                                                                            |
+| managementTemplateId                    | String         | The unique identifier for the [managementTemplate](../resources/managedtenants-managementtemplate.md) associated with this summary. Required. Read-only.                                                        |
+| managementTemplateDisplayName           | String         | The **managementTemplate** display name associated with this summary. Required. Read-only.                                                                                                                      |
+| managementTemplateStepId                | String         | The unique identifier for the **managementTemplateStep** associated with this summary. Required. Read-only.                                                                                                     |
+| managementTemplateDisplayName           | String         | The **managementTemplateStep** display name associated with this summary.  Required. Read-only.                                                                                                                 |
+| assignedTenantsCount                    | Int32          | The total number of tenants assigned to the **managementTemplateStepId**. Required. Read-only.                                                                                                                  |
+| compliantTenantsCount                   | Int32          | The number of compliant tenants assigned to the **managementTemplateStepId**. Required. Read-only.                                                                                                              |
+| notCompliantTenantsCount                | Int32          | The total number of not-compliant tenants assigned to the **managementTemplateStepId**. Required. Read-only.                                                                                                    |
+| dismissedTenantsCount                   | Int32          | The number of dismissed tenants assigned to the **managementTemplateStepId**. Required. Read-only.                                                                                                              |
+| ineligibleTenantsCount                  | Int32          | The number of ineligible tenants assigned to the **managementTemplateStepId**. Required. Read-only.                                                                                                             |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -51,24 +51,23 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+ json
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementTemplateStepTenantSummary",
-  "id": "String (identifier)",
-  "managementTemplateCollectionId": "String",
-  "managementTemplateCollectionDisplayName": "String",
-  "managementTemplateId": "String",
-  "managementTemplateDisplayName": "String",
-  "managementTemplateStepId": "String",
-  "managementTemplateStepDisplayName": "String",
   "assignedTenantsCount": "Int32",
   "compliantTenantsCount": "Int32",
-  "notCompliantTenantsCount": "Int32",
-  "dismissedTenantsCount": "Int32",
-  "ineligibleTenantsCount": "Int32",
-  "createdDateTime": "DateTimeOffset",
   "createdByUserId": "String",
+  "createdDateTime": "DateTimeOffset",
+  "dismissedTenantsCount": "Int32",
+  "id": "String (identifier)",
+  "ineligibleTenantsCount": "Int32",
+  "lastActionByUserId": "String",
   "lastActionDateTime": "DateTimeOffset",
-  "lastActionByUserId": "String"
+  "managementTemplateCollectionDisplayName": "String",
+  "managementTemplateCollectionId": "String",
+  "managementTemplateDisplayName": "String",
+  "managementTemplateId": "String",
+  "managementTemplateStepDisplayName": "String",
+  "managementTemplateStepId": "String",
+  "notCompliantTenantsCount": "Int32"
 }
-```
