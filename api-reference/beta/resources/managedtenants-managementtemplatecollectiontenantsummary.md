@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the summary of a [managementTemplateCollection](../resources/managedtenants-managementTemplateCollection.md) on a tenant.
+Represents the summary of a [managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) on a tenant.
 
 ## Methods
 |Method|Return type|Description|
