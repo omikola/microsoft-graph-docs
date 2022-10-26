@@ -34,7 +34,7 @@ GET /tenantRelationships/managedTenants/managementTemplateStepTenantSummaries/{m
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
+This method supports the `$apply`, `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -52,11 +52,16 @@ If successful, this method returns a `200 OK` response code and a [managementTem
 
 ### Request
 
+The following is an example of a request.
+
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplateStepTenantSummaries/{managementTemplateStepTenantSummaryId}
 ```
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
