@@ -7,7 +7,7 @@ ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# List managedTenantAlerts
+# List managementTemplateStepTenantSummaries
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
