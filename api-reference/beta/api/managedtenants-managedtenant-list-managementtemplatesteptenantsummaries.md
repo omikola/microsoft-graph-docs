@@ -73,22 +73,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#managementTemplateStepTenantSummary",
-    "value": [
-        {
-            "@odata.etag": "\"5600b9b4-0000-0800-0000-61d51be10000\"",
-            "managementTemplateCollectionId": "1c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-            "managementTemplateCollectionDisplayName": "collection",
-            "managementTemplateId": "2c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-            "managementTemplateDisplayName": "template",
-            "managementTemplateStepId": "3c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-            "managementTemplateStepDisplayName": "step",
-            "assignedTenantsCount": 304,
-            "compliantTenantsCount": 11,
-            "notCompliantTenantsCount": 234,
-            "dismissedTenantsCount": 4,
-            "ineligibleTenantsCount": 55
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#managementTemplateStepTenantSummary",
+  "value": [
+    {
+      "@odata.etag": "\"5600b9b4-0000-0800-0000-61d51be10000\"",
+      "managementTemplateCollectionId": "1c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+      "managementTemplateCollectionDisplayName": "collection",
+      "managementTemplateId": "2c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+      "managementTemplateDisplayName": "template",
+      "managementTemplateStepId": "3c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+      "managementTemplateStepDisplayName": "step",
+      "assignedTenantsCount": 304,
+      "compliantTenantsCount": 11,
+      "notCompliantTenantsCount": 234,
+      "dismissedTenantsCount": 4,
+      "ineligibleTenantsCount": 55
+    }
+  ]
 }
 ```
