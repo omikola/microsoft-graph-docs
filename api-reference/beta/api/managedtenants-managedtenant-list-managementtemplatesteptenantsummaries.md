@@ -1,6 +1,6 @@
 ---
 title: "List managementTemplateStepTenantSummaries"
-description: "Get a list of the managementTemplateStepTenantSummaries objects and their properties."
+description: "Get a list of the managementTemplateStepTenantSummary objects and their properties."
 author: "oliviamikola"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [managementTemplateStepTenantSummaries](../resources/managedtenants-managementtemplatesteptenantsummary.md) objects and their properties.
+Get a list of the [managementTemplateStepTenantSummary](../resources/managedtenants-managementtemplatesteptenantsummary.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /tenantRelationships/managedTenants/managementTemplateStepTenantSummaries
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top`.
+This method supports the `$apply`, `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -52,11 +52,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of a request.
+
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplateStepTenantSummaries
 ```
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,22 +71,23 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#managementTemplateStepTenantSummary",
     "value": [
         {
             "@odata.etag": "\"5600b9b4-0000-0800-0000-61d51be10000\"",
-			"managementTemplateCollectionId": "1c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-			"managementTemplateCollectionDisplayName": "collection",
-			"managementTemplateId": "2c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-			"managementTemplateDisplayName": "template",
-			"managementTemplateStepId": "3c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
-			"managementTemplateStepDisplayName": "step",
+            "managementTemplateCollectionId": "1c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+            "managementTemplateCollectionDisplayName": "collection",
+            "managementTemplateId": "2c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+            "managementTemplateDisplayName": "template",
+            "managementTemplateStepId": "3c13b9c3-1f65-4472-81a8-da6c8c95cbf4",
+            "managementTemplateStepDisplayName": "step",
             "assignedTenantsCount": 304,
-			"compliantTenantsCount": 11,
-			"notCompliantTenantsCount": 234,
-			"dismissedTenantsCount": 4,
-			"ineligibleTenantsCount": 55
+            "compliantTenantsCount": 11,
+            "notCompliantTenantsCount": 234,
+            "dismissedTenantsCount": 4,
+            "ineligibleTenantsCount": 55
         }
     ]
 }
