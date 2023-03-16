@@ -45,12 +45,6 @@ Represents the summary of a [managementTemplateCollection](../resources/managedt
 | excludedUsersCount                      | Int32          | The number of excluded users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                         |
 | excludedUsersDistinctCount              | Int32          | The number of distinct excluded users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                |
 
-
-
-				<Property Name="regressedStepsCount" Type="Edm.Int32" />
-				<Property Name="unlicensedUsersCount" Type="Edm.Int32" />
-				<Property Name="regressedUsersCount" Type="Edm.Int32" />
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -71,7 +65,10 @@ The following is a JSON representation of the resource.
   "dismissedStepsCount": "Int32",
   "excludedUsersCount": "Int32",
   "id": "String (identifier)",
-  "incompleteStepsCount": "Int32",
+  "regressedStepsCount": "Int32",
+  "unlicensedUsersCount": "Int32",
+  "regressedStepsCount": "Int32",			
+  "regressedUsersCount": "Int32",
   "incompleteUsersCount": "Int32",
   "ineligibleStepsCount": "Int32",
   "isComplete": "Boolean",
