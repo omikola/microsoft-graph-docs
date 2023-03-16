@@ -764,5 +764,39 @@
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     }
+  ],
+  "ChangeList": [
+        {
+          "Id": "2f81f484-fd0f-404a-90c4-e080acc8b935",
+          "ApiChange": "Property",
+          "ChangedApiName": "regressedStepsCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `regressedStepsCount` property to the [managementTemplateCollectionTenantSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedTenants-managementTemplateCollectionTenantSummary?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollectionTenantSummary"
+        },
+        {
+          "Id": "2f81f484-fd0f-404a-90c4-e080acc8b935",
+          "ApiChange": "Property",
+          "ChangedApiName": "regressedUsersCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `regressedUsersCount` property to the [managementTemplateCollectionTenantSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedTenants-managementTemplateCollectionTenantSummary?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollectionTenantSummary"
+        },
+        {
+          "Id": "2f81f484-fd0f-404a-90c4-e080acc8b935",
+          "ApiChange": "Property",
+          "ChangedApiName": "unlicensedUsersCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `unlicensedUsersCount` property to the [managementTemplateCollectionTenantSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedTenants-managementTemplateCollectionTenantSummary?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollectionTenantSummary"
+        }
+      ],
+      "Id": "2f81f484-fd0f-404a-90c4-e080acc8b935",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-16T00:22:01.8929229Z",
+      "WorkloadArea": "Microsoft.MultiTenantPlatform",
+      "SubArea": ""
+    }
   ]
 }
