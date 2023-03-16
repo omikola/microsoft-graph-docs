@@ -37,10 +37,19 @@ Represents the summary of a [managementTemplateCollection](../resources/managedt
 | incompleteStepsCount                    | Int32          | The number of incomplete steps associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
 | dismissedStepsCount                     | Int32          | The number of dismissed steps associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                        |
 | ineligibleStepsCount                    | Int32          | The number of ineligible steps associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
+| regressedStepsCount                    | Int32          | The number of regressed steps associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
+| unlicensedUsersCount                    | Int32          | The number of unlicensed users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
+| regressedUsersCount                    | Int32          | The number of regressed users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
 | completeUsersCount                      | Int32          | The number of complete users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                         |
 | incompleteUsersCount                    | Int32          | The number of incomplete users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                       |
 | excludedUsersCount                      | Int32          | The number of excluded users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                         |
 | excludedUsersDistinctCount              | Int32          | The number of distinct excluded users associated with this **tenantId**, **managementTemplateCollectionId** pair. Required. Read-only.                                |
+
+
+
+				<Property Name="regressedStepsCount" Type="Edm.Int32" />
+				<Property Name="unlicensedUsersCount" Type="Edm.Int32" />
+				<Property Name="regressedUsersCount" Type="Edm.Int32" />
 
 ## JSON representation
 The following is a JSON representation of the resource.
