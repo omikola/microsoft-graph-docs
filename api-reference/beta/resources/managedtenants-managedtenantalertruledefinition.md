@@ -31,7 +31,8 @@ The Microsoft built and designed rule templates will be used by Azure AD users w
 |`lastActionDateTime`|`DateTimeOffset`| The date and time at which this entity was last modified. Optional. Readonly. |
 | `definitionTemplate` | `microsoft.graph.managedTenants.alertRuleDefinitionTemplate` | The template used to create the alertRuleDefinition. Optional. Readonly |
 | `displayName` | `string` | The display name of the alertRule. Ex: "Risky User Alert Rule Template"  Optional. Readonly |
-|`settings`|`Collection(microsoft.graph.managedTenants.managementTemplateStepSetting)`|The default settings used when initially creating a new alert rule. These are the initial, recommended settings. The Azure AD user can change these how they see fit and those new settings are store in the alert rule's applied settings.  Optional. Readonly ||
+|`settings`|`Collection(microsoft.graph.managedTenants.managementTemplateStepSetting)`|The default settings used when initially creating a new alert rule. These are the initial, recommended settings. The Azure AD user can change these how they see fit and those new settings are store in the alert rule's applied settings.  Optional. Readonly |
+| `referenceStrings` | `Collection(microsoft.graph.managedTenants.ManagementTemplateStepSettingReferenceString) | A collection of string that will be used to reference alert title tokens stored on the definition template. Optional. Readonly. |
 
 #### alertRuleDefinitionTemplate Properties
 
